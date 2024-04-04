@@ -1,0 +1,52 @@
+     body{
+    background-color: black;
+    }
+
+    .icon{
+        color: white;
+    }
+
+    .img-carosel{
+        width: 600px;
+        height: 450px;  
+        padding-top: 20px;
+        border-radius: 50px;   
+    }
+
+    .size{
+        width: 130px;       
+        margin:5px 12px;    
+        border-radius: 20px;
+        cursor: pointer;    
+    }
+
+    .bgColor{
+        background-color: black;
+    }
+
+    button.genre{
+        width: 95px;
+        border-radius: 20px;   
+        background-color: grey;   
+    }
+
+    button.genre:hover{
+        width: 110px;
+        font-size: 20px;
+        background-color: black;
+    }
+
+    #carosel{
+        margin-top: 85px;
+    }
+
+    
+    .center{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #footer p{
+        cursor: pointer;
+    }
