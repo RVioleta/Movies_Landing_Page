@@ -143,12 +143,12 @@
              <div class="col-sm-12 col-md-3 col-lg-2 bg-dark ">
                 <div class="row">
                     <div class="col-md-12 col-lg-12 pt-4 center">
-                        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#addNewMovie">
                             Add new movie
                         </button>
                       
                       <!-- Modal -->
-                      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal fade" id="addNewMovie" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header">
@@ -156,24 +156,24 @@
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                    <form method="POST" onsubmit="return CheckValues()">            
+                                    <form action="#">            
                                         <input type="text" name="name" id="name" class="form-control" placeholder="Enter the name of the movie" required />             
                                         <br/>                                          
                                         <input type="text" name="year" id="year" class="form-control" placeholder="Enter the year of the movie" required>
                                          <br/>           
                                          <div class="input-group mb-3">
-                                            <select id="chouse" class="form-select" aria-label="Default select example" required>
+                                            <select id="genre" class="form-select" aria-label="Default select example" required>
                                                 <option selected>Choose the genre of the movie</option>
-                                                <option value="1">Action</option>
-                                                <option value="2">Comedy</option>
-                                                <option value="3">Thriller</option>
-                                                <option value="4">Drama</option>
-                                                <option value="5">Crime</option>
-                                                <option value="6">Romance</option>
-                                                <option value="7">Sci-Fi</option>
-                                                <option value="8">Fantasy</option>
-                                                <option value="9">Biografy</option>
-                                                <option value="10">History</option>
+                                                <option value="Action">Action</option>
+                                                <option value="Comedy">Comedy</option>
+                                                <option value="Thriller">Thriller</option>
+                                                <option value="Drama">Drama</option>
+                                                <option value="Crime">Crime</option>
+                                                <option value="Romance">Romance</option>
+                                                <option value="Sci-Fi">Sci-Fi</option>
+                                                <option value="Fantasy">Fantasy</option>
+                                                <option value="Biography">Biography</option>
+                                                <option value="History">History</option>
                                             </select>
                                         </div>
                                         <div class="input-group">                
@@ -300,8 +300,32 @@
               </div>
             
           </div>-->
-    </section>
+    <div id="custom-movie-section">
+      <div id="custom-filtering-genre"><h3 class="genre-header">New Custom Movies</h3><div class="row row-cols-1 row-cols-1 row-cols-md-3 row-cols-lg-6 g-3 m-0" id="custom-movie"></div>
+    </div>
+        </section>
     <!--section with id cards is done-->
+
+    
+<!-- Bootstrap Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Details</h5>
+        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" id="modal-body">
+        <!-- Modal content will be loaded here -->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
     <section id="footer" class="bgColor pt-3 pb-3">
         <div class="row m-0">
             <div class="col-12 col-md-3 offset-lg-2 col-xl-2 offset-xl-2">

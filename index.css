@@ -67,3 +67,6 @@ button.genre:hover{
     z-index: 1;
     
 }
+#custom-movie-section{
+    display: none;
+}
