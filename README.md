@@ -13,3 +13,4 @@ After you clone the project, you need to save the api key in local storage becau
 localStorage.setItem("apiKey", "<THE_API_KEY>")
 ```
 3. Or create an api key here https://rapidapi.com/jakash1997/api/advanced-movie-search
+4. Refresh the page
