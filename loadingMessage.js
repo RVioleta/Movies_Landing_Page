@@ -15,10 +15,8 @@ $(document).ready(function(){
  
     $.ajax(settings).done(function (response) {
         let quoteMessage = response.quote
-        let quote = ""
         let author = ""
 });
-        $("#quote").append(quote)
         $("#author").append(author)
 
 })
