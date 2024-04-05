@@ -1,52 +1,69 @@
-     body{
+    body{
+background-color: black;
+}
+
+.icon{
+    color: white;
+}
+
+.img-carosel{
+    width: 600px;
+    height: 450px;  
+    padding-top: 20px;
+    border-radius: 50px;   
+}
+
+.size{
+    width: 130px;       
+    margin:5px 12px;    
+    border-radius: 20px;
+    cursor: pointer;    
+}
+
+.bgColor{
     background-color: black;
-    }
+}
 
-    .icon{
-        color: white;
-    }
+button.genre{
+    width: 95px;
+    border-radius: 20px;   
+    background-color: grey;   
+}
 
-    .img-carosel{
-        width: 600px;
-        height: 450px;  
-        padding-top: 20px;
-        border-radius: 50px;   
-    }
+button.genre:hover{
+    width: 110px;
+    font-size: 20px;
+    background-color: black;
+}
 
-    .size{
-        width: 130px;       
-        margin:5px 12px;    
-        border-radius: 20px;
-        cursor: pointer;    
-    }
+#carosel{
+    margin-top: 85px;
+}
 
-    .bgColor{
-        background-color: black;
-    }
 
-    button.genre{
-        width: 95px;
-        border-radius: 20px;   
-        background-color: grey;   
-    }
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-    button.genre:hover{
-        width: 110px;
-        font-size: 20px;
-        background-color: black;
-    }
+#footer p{
+    cursor: pointer;
+}
 
-    #carosel{
-        margin-top: 85px;
-    }
-
+.genre-header{
+    margin-top: 10px;
+    margin-bottom: 0;
+    background-color: black;
+    color: white;
+}
+.big:hover{
+    width: 400px;
+    height: 400px;
+    left: -50px;
+    right: 50px;
+    top: -50px;   
+    bottom: 80px;
+    z-index: 1;
     
-    .center{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #footer p{
-        cursor: pointer;
-    }
+}

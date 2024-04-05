@@ -28,3 +28,40 @@
       $("#errorMessage").html("You must to write description for the movie").css("color", ("red"))      
     }
   }
+
+
+  $(document).ready(function(){
+    $("#img1").click(function(){
+      $(".one").toggle();
+    });
+  });
+
+  $(document).ready(function(){
+    $("#img2").click(function(){
+      $(".two").toggle();
+    });
+  });
+
+  $(document).ready(function(){
+    $("#img3").click(function(){
+      $(".three").toggle();
+    });
+  });
+
+  $(document).ready(function(){
+    $("#img4").click(function(){
+      $(".four").toggle();
+    });
+  });
+
+  $(document).ready(function(){
+    $("#img5").click(function(){
+      $(".five").toggle();
+    });
+  });
+
+  $(document).ready(function(){
+    $("#img6").click(function(){
+      $(".six").toggle();
+    });
+  });
